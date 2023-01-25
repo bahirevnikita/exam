@@ -7,6 +7,11 @@
   font-size: 62.5%;
   font-weight: 400;
   text-align: center;
+  height: max-content;
+  width: max-content;
+}
+*{  text-decoration: none;
+  color: #ffffff;
 }
 
 body {
@@ -22,12 +27,20 @@ header {
   height: 7.1rem;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
-header a {
+.logged a {
   font-weight: 400;
   font-size: 1.4rem;
   line-height: 1.7rem;
+}
+.logged {
+  height: 7.1rem;
+  min-width: 33.6rem;
+  /* width: 30rem; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .menu {
   display: none;
@@ -37,6 +50,8 @@ header a {
   align-items: center;
 }
 .reg {
+  padding: 0 2.6rem;
+  text-align: center;
   margin-left: 1.7rem;
   height: 4.2rem;
   color: #000;
@@ -53,7 +68,7 @@ section {
 }
 h1 {
   margin: 5rem auto;
-  text-align: center;
+  text-align: left;
   font-weight: 700;
   font-size: 2.9rem;
   line-height: 3.6rem;
@@ -73,7 +88,9 @@ h1 {
 .about div {
   width: 23.8rem;
 }
-
+.title {
+  text-align: left;
+}
 h2 {
   font-weight: 700;
   font-size: 2rem;
@@ -87,6 +104,7 @@ h2 {
 }
 
 .bigpicture {
+  display: flex;
   width: 33.2rem;
   height: 41.6rem;
 }
@@ -95,14 +113,72 @@ h2 {
   height: 41.6rem;
 }
 
-@media all and (min-width: 1440px) {
+@media all and (min-width: 1920px) {
+  .hidden {
+    display: none;
+  }
   .menu {
     display: block;
     display: flex;
-    max-width: 48.9rem;
+    min-width: 45rem;
     justify-content: space-between;
   }
+  li {
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+  }
+  li:first-child {
+    color: #1ee1b3;
+  }
+  .reg {
+    margin-left: 3.2rem;
+  }
   body {
-    max-width: 192rem;
+    min-width: 192rem;
+  }
+  section {
+    display: flex;
+    justify-content: space-around;
+  }
+  .main {
+    order: 2;
+  }
+  .bigpicture {
+    order: 1;
+  }
+  .bigpicture {
+    display: flex;
+    width: 64rem;
+    height: 76.9rem;
+  }
+  .bigpicture img {
+    width: 64rem;
+    height: 76.9rem;
+  }
+  h1 {
+    font-weight: 700;
+    font-size: 5rem;
+    line-height: 6rem;
+    margin-bottom: 1rem;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2.1rem;
+    padding: 0 19rem;
+  }
+
+  .about img {
+    width: 10.4rem;
+    height: 10.4rem;
+  }
+  .about div {
+    width: 48rem;
+  }
+  .about {
+    width: 68.1rem;
+  }
+  .load {
+    width: 24.5rem;
   }
 }
