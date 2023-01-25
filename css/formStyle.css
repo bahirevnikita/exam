@@ -1,0 +1,19 @@
+.form{
+    display: flex;
+    justify-content: center;
+    width: max-content;
+
+}
+form{
+    display: flex;
+    justify-content: center;
+    width: 45rem;
+}
+fieldset{width: 45rem;}
+fieldset{
+    border: 1px solid;
+    border-radius: 10px;
+}
+input{
+color: black;
+}

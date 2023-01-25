@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/formStyle.css">
+    <title>Document</title>
+</head>
+<body>
+        <header>
+        <ul class="menu">
+          <li>About</li>
+          <li>Why Begin</li>
+          <li>Features</li>
+          <li>Contact</li>
+        </ul>
+  
+        <div class="logged">
+            <a class="hidden" href="#">Menu</a>
+            <div class="invt">
+              <a href="#">Login</a>
+              <a class="reg" href="#">SIGN UP</a>
+            </div>
+        </div>
+      </header>
+      
+        <div class="form">
+            <form class="forma" name="contact" method="POST" data-netlify="true" action="//httpbin.org/post.">
+               
+                <fieldset class="secret">
+                   
+                    <fieldset class="aplication">
+                        <legend>Номер заявки:</legend>
+                        <input type="text" required="" name="fio" placeholder="Номер">
+                    </fieldset>
+                    <fieldset class="aplication">
+                        <legend>
+                        Проблема:
+                        </legend>
+                        <input type="radio" name="gender"  value="404"><div>Отсутвует связь</div>
+                        <input type="radio" name="gender" value="lowConnect"><div>Медленное подключение</div>
+                    </fieldset>
+                    <fieldset class="aplication">
+                        <legend>Email:</legend>
+                        <input class="pole" type="email" required="" name="email" placeholder="email@youradress.com">
+                    </fieldset>
+                     <input type="button" name="form-name" value="contact">
+            </form>
+        </div>
+      </body>
+</html>
